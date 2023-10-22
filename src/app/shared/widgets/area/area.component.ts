@@ -49,7 +49,7 @@ export class AreaComponent implements OnInit {
       },
       plotOptions: {
           series: {
-              pointStart: 2012
+              pointStart: 2015
           },
           area: {
               stacking: 'normal',
