@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class DefaultComponent {
 
+  sideBarOpen = true;
+
+  constructor(){}
+
+  ngOnInit(){}
+
+  sideBarToggler(event: any){
+    this.sideBarOpen = !this.sideBarOpen;
+  }
+
 }
