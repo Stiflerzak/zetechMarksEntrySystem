@@ -1,3 +1,14 @@
 ul li{
     list-style: none;
 }
+
+/* styles.scss or styles.css */
+.logo-container {
+    max-width: 100px; /* Set your desired maximum width */
+  }
+  
+  .logo {
+    width: 100%; /* Ensures the image takes up 100% of the container width */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
