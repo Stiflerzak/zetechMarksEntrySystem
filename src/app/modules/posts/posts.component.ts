@@ -14,7 +14,9 @@ import { NotificationService } from 'src/notification/notification.service';
 })
 export class PostsComponent implements OnInit , OnDestroy  {
 
-  displayedColumns: string[] = ['id', 'jobGroupName','minSalary','midSalary','maxSalary', 'status', 'action'];
+  
+
+  displayedColumns: string[] = ['id', 'courseName','description','duration','createdAt','verifiedFlag','deletedFlag', 'status', 'action'];
   dataSource!: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;

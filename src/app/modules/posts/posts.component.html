@@ -47,21 +47,21 @@
             <td mat-cell *matCellDef="let element; let i = index">{{i + 1}}</td>
           </ng-container>
           
-          <ng-container matColumnDef="jobGroupName">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Job Group Name</th>
-            <td mat-cell *matCellDef="let row"> {{row.jobGroupName | uppercase}} </td>
+          <ng-container matColumnDef="courseName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Course Name</th>
+            <td mat-cell *matCellDef="let row"> {{row.courseName | uppercase}} </td>
           </ng-container>
-          <ng-container matColumnDef="minSalary">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Minimum Salary</th>
-            <td mat-cell *matCellDef="let row">Kshs. {{row.minSalary}} </td>
+          <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Course Description</th>
+            <td mat-cell *matCellDef="let row">Kshs. {{row.description}} </td>
           </ng-container>
-          <ng-container matColumnDef="midSalary">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Mid Salary</th>
-            <td mat-cell *matCellDef="let row">Kshs. {{row.midSalary}} </td>
+          <ng-container matColumnDef="duration">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Course Duration</th>
+            <td mat-cell *matCellDef="let row">Kshs. {{row.duration}} </td>
           </ng-container>
-          <ng-container matColumnDef="maxSalary">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Maximum Salary</th>
-            <td mat-cell *matCellDef="let row">Kshs. {{row.maxSalary}} </td>
+          <ng-container matColumnDef="createdAt">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>created At</th>
+            <td mat-cell *matCellDef="let row">Kshs. {{row.createdAt}} </td>
           </ng-container>
           <!-- <ng-container matColumnDef="postedTime">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Posted On </th>
@@ -74,18 +74,19 @@
               <span *ngIf="row.status == 'Pending' " class="badge badge-pill badge-danger">Pending</span>
             </td>
           </ng-container>
-          <!-- <ng-container matColumnDef="verifiedFlag">
+          <ng-container matColumnDef="verifiedFlag">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Approved</th>
             <td mat-cell *matCellDef="let row">
               <span *ngIf="row.verifiedFlag == 'Y' " class="badge badge-pill badge-success">Approved</span>
               <span *ngIf="row.verifiedFlag == 'N' " class="badge badge-pill badge-warning">Pending</span>
           </ng-container>
+          
           <ng-container matColumnDef="deletedFlag">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Deleted</th>
             <td mat-cell *matCellDef="let row">
               <span *ngIf="row.deletedFlag == 'Y' " class="badge badge-pill badge-danger">YES</span>
               <span *ngIf="row.deletedFlag == 'N' " class="badge badge-pill badge-primary">NO</span>
-          </ng-container> -->
+          </ng-container> 
           <ng-container matColumnDef="action">
             <th mat-header-cell *matHeaderCellDef> Action </th>
             <td mat-cell *matCellDef="let row">
