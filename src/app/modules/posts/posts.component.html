@@ -17,19 +17,19 @@
              (click)="onDialog('', 'ADD')" color="primary">
               <i class="fa fa-plus" aria-hidden="true"></i>CREATE</button>
             <button class="table-main-action-btn bg-success text-white" matTooltip="CSV" mat-raised-button (click)="
-            exporter.exportTable('csv', { fileName: 'JobGroup Data' })">
+            exporter.exportTable('csv', { fileName: 'Course Data' })">
             <i class="fa fa-file-powerpoint-o"></i> CSV
           </button>
           <button class="table-main-action-btn bg-primary text-white" matTooltip="EXCEL" mat-raised-button (click)="
-            exporter.exportTable('xlsx', { fileName: 'JobGroup Data' })
+            exporter.exportTable('xlsx', { fileName: 'Course Data' })
           "> <i class="fa fa-file-excel-o"></i> EXCEL
           </button>
           <button class="table-main-action-btn bg-info text-white" matTooltip="JSON" mat-raised-button (click)="
-            exporter.exportTable('json', { fileName: 'JobGroup Data' })
+            exporter.exportTable('json', { fileName: 'Course Data' })
           "><i class="fa fa-file-code-o"></i> JSON
           </button>
           <button class="table-main-action-btn bg-secondary text-white" matTooltip="TEXT" mat-raised-button (click)="
-            exporter.exportTable('txt', { fileName: 'JobGroup Data' })
+            exporter.exportTable('txt', { fileName: 'Course Data' })
           "> <i class="fa fa-file-text-o"></i> TEXT
           </button>
           </div>
@@ -80,7 +80,7 @@
               <span *ngIf="row.verifiedFlag == 'Y' " class="badge badge-pill badge-success">Approved</span>
               <span *ngIf="row.verifiedFlag == 'N' " class="badge badge-pill badge-warning">Pending</span>
           </ng-container>
-          
+
           <ng-container matColumnDef="deletedFlag">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Deleted</th>
             <td mat-cell *matCellDef="let row">
@@ -102,5 +102,5 @@
           </tr>
         </table>
       </div>
-      <mat-paginator [pageSizeOptions]="[9, 20, 30, 40, 50, 100]" aria-label="Select page of JobGroup"></mat-paginator>
+      <mat-paginator [pageSizeOptions]="[9, 20, 30, 40, 50, 100]" aria-label="Select page of Course Management"></mat-paginator>
     </div>
