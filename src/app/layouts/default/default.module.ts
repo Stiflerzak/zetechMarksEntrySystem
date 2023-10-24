@@ -9,7 +9,13 @@ import {MatSidenavModule} from '@angular/material/sidenav'
 import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
-
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableExporterModule } from 'mat-table-exporter';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,17 @@ import { MatCardModule } from '@angular/material/card';
     MatSidenavModule,
     MatDividerModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressBarModule,
+    MatTableModule,
+    MatTableModule,   
+    MatPaginatorModule,
+    MatIconModule,
+    MatTableExporterModule,
+    MatDialogModule,
+    MatSnackBarModule
+
+
 
   ]
 })

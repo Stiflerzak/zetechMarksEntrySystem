@@ -1,10 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-
 :root {
     --primary-color: #051f36;  
     --accent-color: #FF4081;
   }
+
+
+  html, body {
+    height: 100%;
+    font-family: "Roboto";
+    font-weight: 500 !important;
+    .mat-elevation-z1{
+      background-color: white !important;
+    }
+    .table-row{
+      width: 100%;
+      overflow-x: scroll;
+  
+    }
+    .pull-right{
+      float: right !important;
+      -ms-flex-fle: end !important;
+    }
+    .pull-left{
+      float: left !important;
+      -ms-flex-fle: start !important;
+    }
+    .full-width {
+      width: 100%;
+    }
+    .primary-bg{
+      color: white !important;
+      background-color: rgb(38,83,29) !important;
+    }
+    .primary-font{
+      color: rgb(38,83,29) !important;
+    }
+    .primary-color{
+      color: rgb(38,83,29) !important;
+    }
+    .row{
+      margin: 1px auto;
+    }
+    .table-action-row {
+      margin-top: 5px !important;
+      padding-top: 5px;
+    }
+    .table-main-action-btn {
+      margin: 2px;
+      padding: 2px;
+      height: 25px !important;
+      width: max-content !important;
+      line-height: 20px !important;
+      text-align: center !important;
+      font-size: 10px !important;
+      margin-top: 0px !important;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    .center{
+      text-align: center;
+      margin: auto !important;
+      margin-top: 5% !important;
+  }
+    .green-snackbar { --mdc-snackbar-supporting-text-color: rgb(0, 0, 0); --mdc-snackbar-container-color:  rgb(65, 252, 134) !important; }
+    .red-snackbar { --mdc-snackbar-supporting-text-color: rgb(0, 0, 0); --mdc-snackbar-container-color: #ff766d !important; }
+    
+  }
+  
+  @media screen and (max-width: 1440px) and (max-height: 810px) {
+    html {
+      //  transform: scale(.9);
+      zoom: 80%;
+       // or simply zoom: 90%
+    }
+  }
+  @import '~bootstrap/dist/css/bootstrap.css';
